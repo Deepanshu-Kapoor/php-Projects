@@ -1,0 +1,26 @@
+.numbers{
+    font-size: larger;
+    color: black;
+    margin: 1%;
+}
+.Operators{
+    margin: 1%;
+    font-size: larger;
+}
+#Operator{
+    margin-left: 8%;
+}
+#button{
+    font-size: larger;
+    margin: 1%;
+    margin-left: 8%;
+    color: white;
+    background-color: rgb(0, 123, 255);
+}
+#result{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(2, 200, 2);
+    margin: 1%;
+    margin-left: 8%;
+}
