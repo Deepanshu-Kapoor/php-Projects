@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+main {
+    height: fit-content;
+    padding: 40px;
+    border-radius: 8px;
+    width: 30%;
+    background-color:white;
+}
+h1{
+    text-align: center;
+    padding: 1%;
+    padding-left: 10%;
+    font-style: italic;
+    font-family:'Courier New', Courier, monospace;
+    
+}
+
+form{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+    
+}
+label{
+    display: block;
+    width: 100%;
+    padding: 5%;
+    font-size: larger;
+    font-weight: 100;
+}
+input{
+    display: block;
+    width: 96%;
+    padding: 2%;
+    border-radius: 10px;
+    font-size: medium;
+    
+}
+button{
+    margin: 20px;
+    padding: 2%;
+    border-radius: 10px;
+    margin-left: 15%;
+    font-size: large;
+}
+p{
+    text-align: center;
+    width: 100%;
+    color:red;
+}
