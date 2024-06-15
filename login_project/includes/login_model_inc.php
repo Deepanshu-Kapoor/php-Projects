@@ -29,3 +29,25 @@ function get_username(object $PDO, string $username)
     // Return the fetched result
     return $result;
 }
+
+function get_Password(object $PDO, string $username, string $pwd)
+{
+    // SQL query to select the Username and Password from the Users table where the Username and Password matches the provided value
+    $query = "SELECT pwd FROM Users WHERE username=:username and pwd = :pwd";
+
+    // Prepare the SQL query
+    $stmt = $PDO->prepare($query);
+
+    // Bind the provided Username and Password to the query parameter
+    $stmt->bindParam(":username", $username);
+    $stmt->bindParam(":pwd", $pwd);
+
+    // Execute the prepared statement
+    $stmt->execute();
+
+    // Fetch the result as an associative array
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Return the fetched result
+    return $result;
+}
