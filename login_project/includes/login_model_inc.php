@@ -30,17 +30,16 @@ function get_username(object $PDO, string $username)
     return $result;
 }
 
-function get_Password(object $PDO, string $username, string $pwd)
+function get_Password(object $PDO, string $username)
 {
-    // SQL query to select the Username and Password from the Users table where the Username and Password matches the provided value
-    $query = "SELECT pwd FROM Users WHERE username=:username and pwd = :pwd";
+    // SQL query to select the Username and Password from the Users table where the Username 
+    $query = "SELECT pwd FROM Users WHERE username=:username";
 
     // Prepare the SQL query
     $stmt = $PDO->prepare($query);
 
-    // Bind the provided Username and Password to the query parameter
+    // Bind the provided Username to the query parameter
     $stmt->bindParam(":username", $username);
-    $stmt->bindParam(":pwd", $pwd);
 
     // Execute the prepared statement
     $stmt->execute();
